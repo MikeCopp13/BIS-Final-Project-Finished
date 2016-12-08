@@ -1,0 +1,261 @@
+html{
+    color: white;
+    display: block;
+    font-family: 'Nunito',sans-serif;
+}
+body{
+    position: relative;
+    z-index: -1;
+    background-image: url(../media/img/index_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
+    margin: 0;
+}
+.main_content{
+    position: relative;
+    z-index: 0;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 6em;
+    text-align: center;
+    text-shadow: 3px 3px black;
+    border-bottom: solid;
+    border-width: 10px;
+    border-color: blue;
+    box-shadow: 5px 5px 15px #fff;
+    width: auto;
+}
+.band_logo{
+    position: relative;
+    width: 100%;
+    background-image: url(../media/img/Band_Logo.JPG);
+    opacity: 1;
+    height: 50em;
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+}
+.content_text{ /*use RGBA background colors to allow text to be readable but band_logo image will be visible*/
+   background-color: rgba(0,0,0,.8);
+   position: relative;
+   color: rgba(255,255,255,1);
+   font-weight: normal;
+   border-style: solid;
+   border-color: #ffffff;
+   box-shadow: 5px 5px 15px #fff;
+   height: 65em;
+   margin: auto;
+   width: 100%;
+   padding-left: 30px;
+}
+
+/*Start Navbar Design*/
+#navbar{
+    position: relative;
+    z-index: 1;
+    height: 46px;
+}
+#nav_design {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.nav_link {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.active{
+    background-color: black;
+}
+li a:hover {
+    background-color: #111;
+}
+/*Start Music Player Design*/
+.lyrics{
+    display: none;
+    background-color: rgba(0,0,0,.8);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40em;
+    overflow-y: auto;
+    margin-bottom: 2em;
+
+}
+.lyrics_button{
+    padding: .5em;
+    margin: .5em;
+    font-size: 1.5em;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 10%;
+    min-width: 100px; 
+}
+.lyrics_button:hover{
+    background-color: orange;
+}
+.album_title{
+    text-align: center;
+    text-decoration: underline;
+}
+.song_title{
+   padding-top: 1em;
+   text-align: center;
+   font-weight: bold;
+   font-style: italic;
+}
+.song_body{
+    margin: 10px;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/*Start Bio Design*/
+.member_title{
+  text-decoration: underline;
+  padding-top: 2em;
+  padding-bottom: .25em;
+}
+#first_member{
+    margin-bottom: -1em;
+}
+/*Start Video Design*/
+#video_contents{
+   background-color: rgba(0,0,0,.8);
+   position: relative;
+   color: rgba(255,255,255,1);
+   font-weight: normal;
+   border-style: solid;
+   border-color: #ffffff;
+   box-shadow: 5px 5px 15px #fff;
+   height: 65em;
+   margin: auto;
+   width: 125%;
+   padding-left: 30px;
+}
+#topleft_video{
+    margin-top: 1em;
+    margin-right: 1em;
+}
+#topright_video{
+}
+#bottomleft_video{
+    margin-top: 1em;
+    margin-right: 1em;
+}
+bottomright_video{
+
+}
+/*Start Contact Form*/
+/*Credit for the form design goes to: https://www.sitepoint.com/style-web-forms-css/ */
+#form_title {
+  text-align: center;
+}
+form {
+  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  opacity: .8;
+  margin: auto;
+  position: relative;
+  width: 35%;
+  height: 45%;
+  font-size: 26px;
+  font-style: italic;
+  line-height: 1.5em;
+  font-weight: bold;
+  color: blue;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 1em;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+  -webkit-box-shadow: 5px 5px 8px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 5px 5px 8px rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 8px rgba(255, 255, 255, 0.3);
+}
+input {
+  width: 75%;
+  display: block;
+  border: 1px solid #999;
+  height: 100%;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, .8);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, .8);
+}
+textarea#feedback {
+  width: 75%;
+  height: 150px;
+  display: block;
+  margin-bottom: 2em;
+}
+.button {
+  float: left;
+  width: 25%;
+  position: relative;
+  margin: auto;
+  background: black;
+  color: white;
+  height: 100%;
+  border-radius: 15px;
+  border: 1px solid #999;
+  min-width: 75px;
+}
+input.button:hover {
+  background: blue;
+  color: red;
+}
+/*Start Bandsintown Design*/
+.bit-widget-container { /*Bandsintown table design*/
+    background-color: rgba(0,0,0,.8);
+}
+/*Start FB news feed design*/
+#facebook_design { /*center FB news feed script*/
+    width: 30%;
+    margin: auto;
+}
+/*Start Fancybox Design*/
+#gallery_content{ /*image container for fancybox*/
+    z-index: 0;
+    width: 90%;
+    margin-left: auto;  
+}
+img{
+    display: inline-block; /*formatting fancybox images*/
+    width: 15%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*End Fancybox Design*/
+footer{
+    background-color: rgba(0,0,255,.8);
+    float: right;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+footer img{
+    width: 2em;
+    height: 2em;
+}
